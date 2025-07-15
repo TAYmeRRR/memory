@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Память Вечного огня</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Зона срабатывания для появления шапки -->
+  <div class="top-hover-area" aria-hidden="true"></div>
+  <header role="banner">
+    <div class="container">
+      <div class="logo" tabindex="0" aria-label="Логотип Центральной Библиотеки">
+        МБУК МЦБ им. И.М.Бондаренко
+      </div>
+    </div>
+  </header>
+
+  <svg id="stars" aria-hidden="true" viewBox="0 0 1920 1080" style="position:fixed; top:0; left:0; width:100vw; height:100vh; z-index:1;">
+    <polygon class="star" points="960,100 980,160 1040,160 990,200 1010,260 960,220 910,260 930,200 880,160 940,160" />
+    <polygon class="star" points="300,300 320,360 380,360 330,400 350,460 300,420 250,460 270,400 220,360 280,360" />
+    <polygon class="star" points="1600,400 1620,460 1680,460 1630,500 1650,560 1600,520 1550,560 1570,500 1520,460 1580,460" />
+    <polygon class="star" points="1700,200 1720,260 1780,260 1730,300 1750,360 1700,320 1650,360 1670,300 1620,260 1680,260" />
+  </svg>
+  <main>
+    <h1>Память Вечного огня</h1>
+    <section class="person-list" aria-label="Список ветеранов"></section>
+  </main>
+  <footer>© 2025 МБУК МЦБ им. И.М.Бондаренко г. Покровское</footer>
+  <!-- Модальное окно -->
+  <div class="modal" id="modal">
+    <div class="modal-content" id="modal-content">
+      <div class="modal-close" id="modal-close"></div>
+      <!-- JS здесь вставит содержимое -->
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
